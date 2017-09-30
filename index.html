@@ -9,12 +9,12 @@ layout: default
     <li>
       <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
       <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
-      <div class="post-list__meta">        
+      <div class="post-list__meta">
         <time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">
-          <img src="/images/calendar.png" width="20px" /> 
-          {{ post.date | date: "%F"}}</time> 
+          <img src="/images/calendar.png" width="20px" />
+          {{ post.date | date: "%F"}}</time>
         <div class = "tag-img-icon">
-          <img src="/images/tag-icon.svg" width="20px" /> 
+          <img src="/images/tag-icon.svg" width="20px" />
         </div>
         <a href="/tags">
           <div class = "post-list-icon-mate">
@@ -31,4 +31,19 @@ layout: default
 
   {% include pagination.html %}
 
+</div>
+
+<div>
+  <!-- Your XlchPlayerKey -->
+  <script>XlchKey="freeplaygame";</script>
+  <!-- font-awesome 4.2.0 -->
+  <link href="https://lib.baomitu.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- JQuery 2.2.4 -->
+  <script src="https://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
+  <!-- JQuery-mousewheel 3.1.9 -->
+  <script src="https://lib.baomitu.com/jquery-mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
+  <!-- Scrollbar -->
+  <script src="https://static.https.badapple.top/BadApplePlayer/js/scrollbar.js"></script>
+  <!-- BadApplePlayer -->
+  <script src="https://static.https.badapple.top/BadApplePlayer/Player.js"></script>
 </div>
